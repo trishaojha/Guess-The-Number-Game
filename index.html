@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Guess the Number</h1>
+    <p>Select a difficulty:</p>
+    <select id="difficulty">
+      <option value="easy">Easy (1-10)</option>
+      <option value="medium">Medium (1-50)</option>
+      <option value="hard">Hard (1-100)</option>
+    </select>
+    <button onclick="startGame()">Start Game</button>
+
+    <div id="game" class="hidden">
+      <p>Enter your guess:</p>
+      <input type="number" id="userGuess" />
+      <button onclick="checkGuess()">Submit</button>
+      <p id="message"></p>
+      <p>Score: <span id="score">100</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
